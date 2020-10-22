@@ -1,6 +1,9 @@
 # thermal-imaging-repo
 This repo contains applications that demostarte how to use FLiR Lepton thermal camera.  The FLiR sensor uses microbolometer array that changes resistance as its heated up.  By measuring resistance the sensor can determine the tempature of detected objects.  The sensor's firmware creates a colored image that encodes that resistance data into heat map.  The image can be processed using the same techniques as visible light.
 
+![Lepton](https://user-images.githubusercontent.com/21957723/96892827-e22c1600-143e-11eb-983a-9d2316730169.jpg)
+
+
 To use the applications in this repo you will need a FLir Lepton camera module, information on where to purchase one can be found here https://lepton.flir.com/
 
 To get USB connectivity you will need a PureThermal board, information on where to purchase one can be found here https://www.digikey.com/en/product-highlight/g/groupgets/purethermal-boards?utm_adgroup=xGeneral&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search&utm_term=&utm_content=xGeneral&gclid=Cj0KCQjw28T8BRDbARIsAEOMBcx4dKdKK7L4yeLrnVBfl1GyPnaFo-tPLi55sXJyuX3zQA7RwKLBvyIaAqy4EALw_wcB  
