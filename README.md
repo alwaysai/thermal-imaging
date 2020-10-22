@@ -3,8 +3,9 @@ This repo contains applications that demostarte how to use FLiR Lepton thermal c
 
 ![Lepton](https://user-images.githubusercontent.com/21957723/96892827-e22c1600-143e-11eb-983a-9d2316730169.jpg)
 
-
 To use the applications in this repo you will need a FLir Lepton camera module, information on where to purchase one can be found here https://lepton.flir.com/
+
+![14670-PureThermal_2-_FLiR_Lepton_Dev_Board-01](https://user-images.githubusercontent.com/21957723/96893184-4bac2480-143f-11eb-869d-b9ff4f29169b.jpg)
 
 To get USB connectivity you will need a PureThermal board, information on where to purchase one can be found here https://www.digikey.com/en/product-highlight/g/groupgets/purethermal-boards?utm_adgroup=xGeneral&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search&utm_term=&utm_content=xGeneral&gclid=Cj0KCQjw28T8BRDbARIsAEOMBcx4dKdKK7L4yeLrnVBfl1GyPnaFo-tPLi55sXJyuX3zQA7RwKLBvyIaAqy4EALw_wcB  
 
