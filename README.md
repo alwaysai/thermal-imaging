@@ -27,13 +27,13 @@ Applications for themal camera:
 | thermal-detector            | Application detects objects in the thermal spectrum and bounds the edges of the detected objects|
 
 ## Running
-FLiR Lepton Camera needs to be connected to PureThermal board that provides USB connectivity to use the applications in this repo 
+FLiR Lepton Camera needs to be connected to PureThermal board that provides USB connectivity to use the applications in this repo
 
 Use the alwaysAI CLI to build and start these apps on Linux PCs and Devices:
 
 Configure (once): `aai app configure`
 
-Build: `aai app deploy`
+Build: `aai app install`
 
 Run: `aai app start`
 
