@@ -3,7 +3,7 @@ import edgeiq
 import cv2
 import numpy as np
 """
-detect objects edges based on thermal detection 
+detect objects edges based on thermal detection
 """
 
 
@@ -24,16 +24,16 @@ def main():
 
                 # HSV
                 frame_hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
-                frame_value = frame_hsv[:,:,2]
+                frame_value = frame_hsv[:, :, 2]
 
                 # bilateral filter - edge-preserving image smoothing method
                 blurredBrightness = cv2.bilateralFilter(frame_value, 9, 150, 150)
 
                 # Canny edge detector
                 thresh = 50
-                edges = cv2.Canny(blurredBrightness,thresh,thresh*2, L2gradient=True)
+                edges = cv2.Canny(blurredBrightness, thresh, thresh*2, L2gradient=True)
 
-                                # Generate text to display on streamer
+                # Generate text to display on streamer
                 text = "Thermal Edge Detector"
 
                 streamer.send_data(edges, text)

@@ -2,7 +2,7 @@ import time
 import edgeiq
 import cv2
 """
-Value channel view from a Lepton camera 
+Value channel view from a Lepton camera
 """
 
 
@@ -23,7 +23,7 @@ def main():
 
                 # HSV
                 frame_hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
-                frame_value = frame_hsv[:,:,2]
+                frame_value = frame_hsv[:, :, 2]
 
                 # Generate text to display on streamer
                 text = "Lepton HSV - Value Channel Image"

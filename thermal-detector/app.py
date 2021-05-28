@@ -24,18 +24,18 @@ def main():
 
                 # HSV
                 frame_hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
-                frame_value = frame_hsv[:,:,2]
+                frame_value = frame_hsv[:, :, 2]
 
                 # bilateral filter - edge-preserving image smoothing method
                 blurredBrightness = cv2.bilateralFilter(frame_value, 9, 150, 150)
 
                 # Canny edge detector
                 thresh = 50
-                edges = cv2.Canny(blurredBrightness,thresh,thresh*2, L2gradient=True)
+                edges = cv2.Canny(blurredBrightness, thresh, thresh*2, L2gradient=True)
 
                 # create a binary image by thresholding the original image and
                 # putting a 1 wherever the pixel is warm, and a 0 where it’s not
-                _,mask = cv2.threshold(blurredBrightness,200,1,cv2.THRESH_BINARY)
+                _, mask = cv2.threshold(blurredBrightness, 200, 1, cv2.THRESH_BINARY)
 
                 # erode away at the blobs of 1’s created by that operation
                 erodeSize = 5
@@ -49,7 +49,7 @@ def main():
                 text = "Thermal Detector"
 
                 streamer.send_data((cv2.resize(cv2.cvtColor(mask*edges, cv2.COLOR_GRAY2RGB)
-                    | frame, (640, 480), interpolation = cv2.INTER_CUBIC)), text)
+                    | frame, (640, 480), interpolation=cv2.INTER_CUBIC)), text)
 
                 fps.update()
 

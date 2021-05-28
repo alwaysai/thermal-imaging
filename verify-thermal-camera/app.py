@@ -23,7 +23,7 @@ def main():
                 # Generate text to display on streamer
                 text = "FLiR Lepton"
 
-                streamer.send_data(frame_value, text)
+                streamer.send_data(frame, text)
 
                 fps.update()
 
