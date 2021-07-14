@@ -27,6 +27,7 @@ Applications for thermal cameras:
 | verify-thermal-camera       | Application checks that FLiR Lepton and TrueThermal board are working on the alwaysAI platform  	|
 | hsv 	                      | Application visualizes HSV Value Channel in thermal spectrum|
 | thermal-edges  	            | Application use Canny edge detector to find edges of objects detected by thermal camera|
+| thermal-stream-save         | Application saves a thermal video stream from a FLiR Lepton camera mounted on TrueThermal board|
 | thermal-detector            | Application detects objects in the thermal spectrum and bounds the edges of the detected objects|
 
 ## Usage
